@@ -1,0 +1,288 @@
+/* App.css */
+body{
+  padding: 10px;
+  background-color: aqua;
+}
+#header{
+  color:darkgreen;
+  text-align: center;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+/* Additional styles can be added as needed */
+/* Navbar.css */
+
+.navbar {
+  /* display: flex; */
+  /* display: grid; */
+  /* grid-template-columns: repeat(auto-fit, minmax(0, 1fr)); */
+  justify-content: space-between;
+  padding: 10px 0;
+  background-color: #333;
+  align-items: center;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+} 
+.navbar-brand{
+  display: flex;
+  align-items: center;
+}
+/* Navbar.css */
+.srikalahasti{
+  width: 1330px;
+  height: 450px;
+  margin-top: 10px;
+}
+.text{
+  text-align: justify;
+  color:blue;
+}
+.accommodation-image{
+  height: 300px;
+  width: 423px;
+}
+.accommodation-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.accommodation-card {
+  padding: 5px;
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px; 
+  background-color: white;
+}
+.accommodation-description{
+  text-align: justify;
+}
+#contact{
+  text-align: center;
+}
+#alpha{
+  display:flex;
+  justify-content: center;
+}
+.form-group{
+  margin: 5px;
+}
+#form-group{
+  margin: 10px;
+}
+button{
+  margin: 5px;
+  width: 350px;
+  background-color: blue;
+  border-radius: 5px;
+  color: white;
+  height: 30px;
+}
+#email{
+width: 350px;
+border-radius: 5px;
+height: 20px;
+}
+#message{
+width: 350px;
+border-radius: 5px;
+}
+#name{
+  border-radius: 5px;
+  height: 20px;
+}
+.places-image{
+  height: 300px;
+  width: 423px;
+}
+.places-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.places-card {
+  padding: 5px;
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px; 
+  background-color: white;
+}
+.places-description{
+  text-align: justify;
+}
+.restaurants-image{
+  height: 300px;
+  width: 423px;
+}
+.restaurants-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.restaurants-card {
+  padding: 5px;
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px; 
+  background-color: white;
+}
+.restaurants-description{
+  text-align: justify;
+}
+
+
+@media (max-width: 768px) {
+
+  /* body{
+    width: 200px;
+  } */
+  
+  /* .text{
+    text-align:justify;
+    font-size: 15px;
+    /* word-spacing: -2px; */
+    
+   
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 350px;
+}
+.accommodation-image{
+  height: 300px;
+  width: 350px;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 10px;
+}
+
+.menu-icon {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+}
+
+.line {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content:flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-left: 20px;
+  margin: 5px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+  /* margin: 10px; */
+}
+
+.nav-links a:hover {
+  color: lightgray;
+}
+
+/* Dropdown menu styles */
+.nav-links {
+  flex-direction: column;
+  position:absolute;
+  top: 175px;
+  /* left: 40px; */
+  background-color: #333;
+  /* padding: 10px; */
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.nav-links.open {
+  max-height: 200px; /* Adjust height as needed */
+}
+.srikalahasti{
+  width: 350px;
+  height: 200px;
+  margin-top: 10px;
+}
+.accommodation-card {
+  padding: 5px;
+  width: 350px;
+  margin-bottom: 10px; 
+  background-color: white;
+  
+}
+.places-card {
+  padding: 5px;
+  width: 350px;
+  margin-bottom: 10px; 
+  background-color: white;
+}
+.restaurants-card {
+  padding: 5px;
+  width: 350px;
+  margin-bottom: 10px; 
+  background-color: white;
+}
+.restaurants-image{
+  height: 300px;
+  width: 350px;
+}
+.places-image{
+  height: 300px;
+  width: 350px;
+}
+#contact{
+  /* width: 10px; */
+  text-align: center;
+}
+#name{
+  width: 150px;
+}
+#email{
+  width: 350px;
+}
+#message{
+  width: 350px;
+}
+#button{
+  width: 350px;
+}
+
+}
+
+
